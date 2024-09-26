@@ -1,26 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+   <div id="app"> 
+  <InpuAdd /> <!-- To'g'ri komponent chaqirilganligini tekshiring -->
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import InpuAdd from '@/components/InpuAdd.vue'; // To'g'ri import
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    name: 'App',
+    components: {
+        InpuAdd, // Komponentni to'g'ri ro'yxatga oling
+    },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Stilingiz bu yerda bo'lishi mumkin */
 </style>
